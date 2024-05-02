@@ -77,10 +77,6 @@ module.exports = {
         type: "asset/resource",
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-      {
         test: /\.(css|sass|scss)$/,
         use: [
           "style-loader",
