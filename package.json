@@ -22,6 +22,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.1",
     "group-css-media-queries-loader": "^4.3.0",
+    "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
     "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.9.0",

@@ -8,77 +8,248 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <meta charset="UTF-8" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Inter:wght@600&display=swap"
-      rel="stylesheet" /> -->
-    <title>Test document</title>
+      rel="stylesheet" />
+    <title>VRNas</title>
   </head>
   <body>
-    <div class="navigation">
-      <div class="navigation__box">
-        <div class="logo">
-          <Logo width="{100}" height="{30}" />
-        </div>
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#"> Home </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#"> About us </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#"> Service </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#"> Page </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#"> Blog </a>
-            </li>
-          </ul>
-        </nav>
-        <a class="navigation__contact">Contact us</a>
-      </div>
-    </div>
+
+
+
+
 
     <header class="header">
-      <div class="header__box">
-        <div class="header__col">
-          <div class="header__desc">
-            <h1 class="header__title">Immerse Yourself in Virtual Reality</h1>
-            <p class="header__text">
-              Experience Unforgettable Events in VR. Bring your events to life like never before
-              with our VR services
-            </p>
-            <button class="header__btn">discover more</button>
+      <div class="container">
+        <div class="header__box">
+          <div class="header__container">
+            <a href="#" class="header__logo">
+              <img src="assets/logo.svg" alt="logo" class="header__logo-pic">
+            </a>
           </div>
-          <div class="header__feedback">
-            <div class="header__feedback-row">
-              <div class="header__feedback-picture">
-                <img class="header__feedback-img" src="" />
-              </div>
-              <div class="header__feedback-picture">
-                <img class="header__feedback-img" src="" />
-              </div>
-              <div class="header__feedback-picture">
-                <img class="header__feedback-img" src="" />
-              </div>
-              <span class="header__text-client">32k+ Happy client</span>
-            </div>
-            <div class="header__client-video">
-              <img class="header__client-src" src="" />
-            </div>
+          <div class="header__container">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#"> Home </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#"> About us </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#"> Service </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#"> Page </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#"> Blog </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-        </div>
-        <div class="header__col">
-          <div class="header__img-box">
-            <img class="header__picture" src="" />
+          <div class="header__container">
+            <button class="btn header__contact">Contact us</button>
           </div>
         </div>
       </div>
     </header>
+
+
+
+
+    <main class="main">
+      <section class="introduce">
+        <div class="container">
+          <div class="introduce__box">
+            <div class="introduce__col">
+              <div class="introduce__desc">
+                <h1 class="introduce__title heading__1">Immerse Yourself in Virtual Reality</h1>
+                <p class="introduce__text">
+                  Experience Unforgettable Events in VR. Bring your events to life like never before
+                  with our VR services
+                </p>
+                <button class="introduce__btn btn-primary">discover more</button>
+              </div>
+              <div class="introduce__feedback">
+                <div class="client">
+                  <div class="client__picture">
+                    <img class="client__img" src="assets/client1.png" />
+                    <img class="client__img" src="assets/client2.png" />
+                    <img class="client__img" src="assets/client3.png" />
+                  </div>
+                  <p class="client__text"><span class="client__text-count">32k+</span> Happy client</p>
+                  <div class="client__video">
+                    <img class="client__video-pic" src="assets/play-video.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="introduce__col">
+              <div class="introduce__img-box">
+                <img class="introduce__picture" src="assets/person.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__list">
+            <div class="advantages__item">
+              <div class="advantages__img-box">
+                <img class="advantages__img" src="assets/ad1.svg" alt="">
+              </div>
+              <h3 class="advantages__title">Expertise</h3>
+              <p class="advantages__desc">Our team consists of experienced VR developers, designers, and technicians who have a passion for VR and a commitment to delivering quality work and give the best service</p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__img-box">
+                <img class="advantages__img" src="assets/ad2.svg" alt="">
+              </div>
+              <h3 class="advantages__title">Customization</h3>
+              <p class="advantages__desc">Every client is unique, and we believe every VR experience should be too. We'll work with you to create a customized solution that meets your specific needs and goals</p>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__img-box">
+                <img class="advantages__img" src="assets/ad3.svg" alt="">
+              </div>
+              <h3 class="advantages__title">Service</h3>
+              <p class="advantages__desc">We believe in providing exceptional customer service, from initial consultation to final delivery. Our goal is to ensure you're satisfied with every aspect of your VR experience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="aboutus">
+        <div class="container">
+          <div class="aboutus__inner">
+            <div class="aboutus__col">
+              <div class="aboutus__img-box">
+                <img class="aboutus__img-main" src="assets/person2.png" alt="">
+              </div>
+              <div class="aboutus__play">
+                <a href="#" class="aboutus__play-start">
+                  <img class="aboutus__play-img" src="assets/clipdrop.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="aboutus__col">
+              <p class="aboutus__sub-title sub-title">About us</p>
+              <h2 class="aboutus__title heading__2">Bring your events to life like never before with our VR services.</h2>
+              <p class="aboutus__text text-body1">VRNas is a leading provider of VR services for education, entertainment, architecture, and events. Our mission is to bring the power of virtual reality to everyone, allowing them to explore new worlds, learn in new ways, and experience events in a whole new light.</p>
+              <div class="aboutus__list">
+                <p class="aboutus__item">Cutting-Edge Technology</p>
+                <p class="aboutus__item">Versatile Applications</p>
+                <p class="aboutus__item">Affordable and Accessible</p>
+              </div>
+              <button class="btn-primary aboutus__btn">Read more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="container">
+          <div class="service__header">
+            <div class="service__header-main">
+              <p class="service__sub-title sub-title">OUR SERVICE</p>
+              <h2 class="service__title heading__2">Our Service</h2>
+            </div>
+            <p class="service__descr text-body1">We use the latest VR hardware and software to create high-quality VR experiences that are accessible and affordable. Our goal is to provide exceptional customer service and support, and our team is always available to answer any questions and address any concerns you may have.</p>
+          </div>
+          <div class="service__list">
+            <div class="service__item card-service">
+              <div class="card-service__content">
+                <img src="assets/serv1.svg" alt="" class="card-service__img">
+                <p class="card-service__title">VR Development</p>
+                <p class="card-service__concept">From concept to creation, our team of VR developers will bring your vision to life.</p>
+              </div>
+              <button class="card-service__btn btn-second">LEARN MORE</button>
+            </div>
+            <div class="service__item card-service">
+              <div class="card-service__content">
+                <img src="assets/serv2.svg" alt="" class="card-service__img">
+                <p class="card-service__title">VR Design</p>
+                <p class="card-service__concept">Our talented VR designers will create immersive and engaging environments that will captivate your audience.</p>
+              </div>
+              <button class="card-service__btn btn-second">LEARN MORE</button>
+            </div>
+            <div class="service__item card-service">
+              <div class="card-service__content">
+                <img src="assets/serv3.svg" alt="" class="card-service__img">
+                <p class="card-service__title">VR Consulting</p>
+                <p class="card-service__concept">Our VR consultants will work with you to ensure that your VR experience meets your goals and exceeds your expectations.</p>
+              </div>
+              <button class="card-service__btn btn-second">LEARN MORE</button>
+            </div>
+            <div class="service__item card-service">
+              <div class="card-service__content">
+                <img src="assets/serv4.svg" alt="" class="card-service__img">
+                <p class="card-service__title">VR Games</p>
+                <p class="card-service__concept">We offer a wide selection of VR games that are suitable for players of all ages and skill levels.</p>
+              </div>
+              <button class="card-service__btn btn-second">LEARN MORE</button>
+            </div>
+            <div class="service__item card-service">
+              <div class="card-service__content">
+                <img src="assets/serv5.svg" alt="" class="card-service__img">
+                <p class="card-service__title">VR Events</p>
+                <p class="card-service__concept">Make your next event unforgettable with our VR event services.</p>
+              </div>
+              <button class="card-service__btn btn-second">LEARN MORE</button>
+            </div>
+            <div class="service__item card-service">
+              <div class="card-service__content">
+                <img src="assets/serv6.svg" alt="" class="card-service__img">
+                <p class="card-service__title">VR Entertainment</p>
+                <p class="card-service__concept">reate a VR escape room, or offer VR experiences at a theme park, we have the expertise and experience to make it happen.</p>
+              </div>
+              <button class="card-service__btn btn-second">LEARN MORE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="choose">
+        <div class="choose__container container">
+          <div class="choose__col">
+            <p class="choose__sub-title sub-title">WHY CHOOSE US</p>
+            <h2 class="choose__title heading__2">Why Choose Us for Your VR Needs</h2>
+            <div class="accordion-own">
+              <div class="accordion-own__item">
+                <button class="accordion-own__btn">Passionate and Experienced Team</button>
+                <p class="accordion-own__descr">We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.</p>
+              </div>
+              <div class="accordion-own__item">
+                <button class="accordion-own__btn">Passionate and Experienced Team</button>
+                <p class="accordion-own__descr">We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.</p>
+              </div>
+              <div class="accordion-own__item">
+                <button class="accordion-own__btn">Passionate and Experienced Team</button>
+                <p class="accordion-own__descr">We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.</p>
+              </div>
+            </div>
+          </div>
+          <div class="choose__col">
+            <div class="choose__img-box">
+              <img class="choose__img-main" src="assets/choose_person.png" alt="">
+            </div>
+            <div class="choose__play">
+              <a href="#" class="choose__play-start">
+                <img class="choose__play-img" src="assets/choose_glass.png" alt="">
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>
   </body>
 </html>

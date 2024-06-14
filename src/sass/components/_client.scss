@@ -1,0 +1,61 @@
+.client {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &__picture {
+    
+  }
+
+  &__picture{
+    display: flex;
+    align-items: center;
+    margin-right: 1.8rem;
+  }
+
+  &__img {
+    border-radius: 50%;
+    border: 1px solid $color-black-100;
+  }
+
+  &__img:not(:last-child){
+    margin-right: -1.2rem;
+  }
+
+  &__text{
+    margin-right: auto;
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: $greyscale-grey-2;
+  }
+
+  &__text-count{
+    position: relative;
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: $greyscale-white;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      transform: translate(-5px, 4px);
+      width: 4.8rem;
+      height: 8px;
+      background: url('../assets/flash.svg');
+      background-size: cover;
+    }
+  }
+
+
+  &__video{
+
+  }
+
+  &__video-pic{
+
+  }
+}

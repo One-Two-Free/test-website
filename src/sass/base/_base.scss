@@ -14,4 +14,17 @@ html {
 body {
   box-sizing: border-box;
   background: $color-black-100;
+  padding-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: calc($grid-width + 4rem*2);
+  padding: 0 4rem;
+  margin: 0 auto;
+  
 }

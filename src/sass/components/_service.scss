@@ -1,0 +1,35 @@
+.service {
+  padding-bottom: 15rem;
+  margin-bottom: 15rem;
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.6rem;
+  }
+  &__header-main{
+    margin-right: 5rem;
+  }
+  &__sub-title{
+    margin-bottom: 1.2rem;
+  }
+  &__descr{
+    flex: 0 1 62.5rem;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3.6rem;
+    row-gap: 3.2rem;
+  }
+  &__item{
+    flex: 0 1 calc((100% - 2*3.6rem)/3);
+    min-height: 29.2rem;
+  }
+  &__item:nth-child(2),
+  &__item:nth-child(5) {
+    transform: translateY(57px);
+  }
+  &__item:nth-child(3n) {
+    transform: translateY(137px);
+  }
+}

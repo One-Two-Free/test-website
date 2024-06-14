@@ -8,47 +8,62 @@ module.exports = {
   devtool: "source-map",
   devServer: {
     open: true,
-    historyApiFallback: true,
     hot: true,
     static: {
-      directory: path.resolve(__dirname, "./dist"),
+      directory: path.resolve(__dirname, "dist"),
     },
-    devMiddleware: {
-      index: "index.html",
-      writeToDisk: true,
-    },
+    // devMiddleware: {
+    //   index: "index.html",
+    //   writeToDisk: true,
+    // },
     port: 3000,
   },
 
-  entry: { index: "./src/index.js", second: "./src/second.js" },
+  entry: { 
+    index: path.resolve(__dirname,'src','index.js'), 
+    second: path.resolve(__dirname,'src','second.js') 
+  },
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "./dist"),
-    publicPath: "",
+    path: path.resolve(__dirname, "dist"),
+    // publicPath: "",
     clean: true,
+    assetModuleFilename: 'assets/[name][ext]',
   },
 
   plugins: [
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
-      filename: "css/[name].css",
-    }),
     new HtmlWebpackPlugin({
       filename: "index.html",
-      chunks: ["index"],
+      // chunks: ["index"],
       template: path.resolve(__dirname, "src", "index.html"),
-      minify: false,
+      // minify: false,
     }),
     new HtmlWebpackPlugin({
       filename: "second.html",
-      chunks: ["second"],
+      // chunks: ["second"],
       template: path.resolve(__dirname, "src", "second.html"),
-      minify: false,
+      // minify: false,
     }),
   ],
 
   module: {
     rules: [
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
+        test: /\.(css|sass|scss)$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][ext]",
+        },
+      },
       {
         test: /\.(jpe?g|png|webp|gif|svg)$/i,
         use: [
@@ -74,19 +89,9 @@ module.exports = {
             },
           },
         ],
-        type: "asset/resource",
+        type: 'asset/resource',
       },
-      {
-        test: /\.(css|sass|scss)$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: "asset/resource",
-        generator: {
-          filename: "fonts/[name][ext]",
-        },
-      },
+      
       {
         test: /\.js$/,
         exclude: /node_modules/,

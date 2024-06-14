@@ -1,1 +1,4 @@
-console.log("hay from second.js");
+import "./second.html"
+import "./sass/main.scss";
+
+console.log("hello from second.html");

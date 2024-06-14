@@ -1,0 +1,60 @@
+.card-service{
+  padding: 3.8rem 4rem 2.5rem 3.2rem;
+  background: rgba($color: #252532, $alpha: 0.6);
+  border: 1px solid $greyscale-white;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-black-100;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    z-index: 5;
+  }
+  &:hover::before {
+    visibility: visible;
+    opacity: .8;
+  }
+  &:hover .card-service__btn {
+    bottom: 3rem;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__img{
+    margin-bottom: 58px;
+  }
+  &__title{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 2rem;
+    color: $greyscale-white;
+    margin-bottom: 1.2rem;
+  }
+  &__concept{
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2;
+    color: $greyscale-grey-1;
+  }
+  &__btn{
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom .8s;
+    z-index: 10;
+    &:hover{
+      background: linear-gradient(90deg, #0cbaf1 0%, #e95ce9 100%);
+    }
+  }
+}

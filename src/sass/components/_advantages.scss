@@ -1,0 +1,45 @@
+.advantages {
+  margin-bottom: 12rem;
+  
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 4.2rem 6.4rem 5.2rem;
+    background: $color-black-80;
+  }
+
+  &__item {
+    flex: 1 0 0;
+  }
+
+  &__img-box{
+    width: 7rem;
+    height: 7rem;
+    margin-bottom: 4rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 2rem;
+    color: $greyscale-white;
+    margin-bottom: 1.2rem;
+  }
+
+  &__desc {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+
+    // line-height: 28px; 
+    line-height: 2;
+    color: $greyscale-grey-1;
+  }
+}

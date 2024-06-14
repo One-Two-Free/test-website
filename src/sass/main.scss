@@ -1,5 +1,5 @@
 @import "~normalize.css";
-@import "abstracts/functions";
+// @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
@@ -8,19 +8,15 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "layout/header";
 @import "components/navigation";
-// @import "components/bg-video";
-// @import "components/button";
-// @import "components/card";
-// @import "components/composition";
-// @import "components/feature-box";
-// @import "components/form";
-// @import "components/popup";
-// @import "components/story";
-//
-// @import "layout/footer";
-// @import "layout/grid";
-// @import "layout/header";
-// @import "layout/navigation";
-//
-// @import "pages/home";
+@import "components/btn";
+@import "components/introduce";
+@import "components/client";
+@import "components/advantages";
+@import "components/aboutus";
+@import "components/service";
+@import "components/card-service";
+@import "components/choose";
+@import "components/accordion-own";
+

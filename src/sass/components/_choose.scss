@@ -1,0 +1,16 @@
+.choose{
+  &__container{
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+  }
+  &__col{
+    flex: 0 1 50%;
+  }
+  &__sub-title{
+    margin-bottom: 1.2rem;
+  }
+  &__title{
+    margin-bottom: 3.2rem;
+  }
+}

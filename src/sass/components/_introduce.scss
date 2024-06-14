@@ -1,0 +1,39 @@
+.introduce{
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 12.5rem;
+  }
+
+  &__col {
+    &:nth-child(1) {
+      flex: 1 0 50%;
+    }
+  }
+
+  &__desc {
+    
+  }
+
+  &__title {
+    margin-bottom: 1.2rem;
+  }
+
+  &__text {
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 3.2rem;
+
+    line-height: 1.75;
+    color: $greyscale-grey-2;
+  }
+
+  &__btn {
+    margin-bottom: 4.2rem;
+  }
+
+  &__picture {
+    max-width: 100%;
+  }
+}
